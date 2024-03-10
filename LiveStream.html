@@ -58,7 +58,8 @@
     }
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-top: 30px; /* Adjusted to accommodate nav bar */
       height: 0;
       overflow: hidden;
     }
@@ -84,11 +85,12 @@
 
   <!-- Your timeline content goes here -->
 
+  <div class="video-container">
+    <iframe src="https://player.twitch.tv/?channel=mindgateproject&parent=mindgateproject.github.io" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+  </div>
+
   <div class="footer">
     <p>MindGate Project | Contact: <a href="mailto:MindGateProject@HackerMail.com">MindGateProject@HackerMail.com</a></p>
-  </div> 
-  <div class="video-container">
-    <iframe width="100%" height="100%" src="https://player.twitch.tv/?channel=mindgateproject&parent=mindgateproject.github.io" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
   </div>
 </body>
 </html>
