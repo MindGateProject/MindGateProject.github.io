@@ -4,83 +4,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Stargate Timeline</title>
   <link rel="icon" type="image/png" href="favicon.ico"> <!-- Replace "favicon.ico" with the path to your favicon image -->
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .center-image {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px; /* Add margin top for space above the image */
-    }
-    .footer {
-      background-color: white;
-      color: black;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      left: 0; /* Align the footer to the left */
-      right: 0; /* Align the footer to the right */
-      width: auto; /* Set width to auto to take the full width of the viewport */
-    }
-    .footer a {
-      color: black;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-    .page-break {
-      page-break-after: always;
-    }
-    .bottom-space {
-      margin-bottom: 100px; /* Adjust the margin bottom as needed */
-    }
-    nav {
-      background-color: #333; /* Dark background color for the menu */
-      padding: 10px 0; /* Adjust padding as needed */
-      position: sticky; /* Make the menu sticky */
-      top: 0; /* Stick the menu to the top */
-      z-index: 1000; /* Ensure the menu appears above other content */
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0 10px; /* Adjust margin as needed */
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    .content {
-      margin-left: 20%;
-      margin-right: 20%;
-      padding-top: 40px; /* Add padding to content to prevent it from being overlapped by the sticky menu */
-    }
-    h2 {
-      color: #E7C477; /* Set title color */
-    }
-    h3 {
-      color: #77AADD; /* Set subheading color */
-    }
-    ul {
-      color: #E22226; /* Set bullet point text color */
-    }
-    ul::marker {
-      color: #E22226; /* Set bullet point color */
-    }
-  </style>
-</head>
-<body>
+ <style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; /* Add margin top for space above the image */
+  }
+  .footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Align the footer to the left */
+    right: 0; /* Align the footer to the right */
+    width: auto; /* Set width to auto to take the full width of the viewport */
+  }
+  .footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  .bottom-space {
+    margin-bottom: 100px; /* Adjust the margin bottom as needed */
+  }
+  nav {
+    background-color: #333; /* Dark background color for the menu */
+    padding: 10px 0; /* Adjust padding as needed */
+    position: sticky; /* Make the menu sticky */
+    top: 0; /* Stick the menu to the top */
+    z-index: 1000; /* Ensure the menu appears above other content */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .content {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 40px; /* Add padding to content to prevent it from being overlapped by the sticky menu */
+  }
+  h2 {
+    color: #E7C477; /* Set title color */
+  }
+  h3 {
+    color: #77AADD; /* Set subheading color */
+  }
+  ul {
+    color: #6299D8; /* Set bullet point title color */
+  }
+  ul::marker {
+    color: #6299D8; /* Set bullet point color */
+  }
+  .red-title {
+    color: #E02025; /* Set red title color */
+  }
+  .red-title + p {
+    color: white; /* Set color for descriptions after red titles */
+  }
+</style>
+</head><body>
   <nav>
     <ul>
       <li><a href="https://mindgateproject.github.io">Home</a></li>
@@ -99,7 +104,7 @@
     <h2>Initial Timeline</h2>
     <h3>1950s - 1960s: Project Bluebird and Project Artichoke</h3>
     <ul>
-      <li><b><i>Project Bluebird (1950-1953):</i></b> Investigated techniques for interrogation and mind control.</li>
+      <li class="red-title"><b><i>Project Bluebird (1950-1953):</i></b> Investigated techniques for interrogation and mind control.</li>
       <li><b><i>Project Artichoke (1951-1956):</i></b> Focused on hypnosis, drugs, and other methods for interrogation and behavior modification.</li>
     </ul>
 
@@ -131,7 +136,7 @@
     <h2>Expanded Timeline</h2>
     <h3>1950s - 1960s: Project Bluebird and Project Artichoke</h3>
     <ul>
-      <li><b><i>Project Bluebird (1950-1953):</i></b> Investigated techniques for interrogation and mind control, including hypnosis, drugs, and other methods.</li>
+      <li class="red-title"><b><i>Project Bluebird (1950-1953):</i></b> Investigated techniques for interrogation and mind control, including hypnosis, drugs, and other methods.</li>
       <li><b><i>Project Artichoke (1951-1956):</i></b> Focused on hypnosis, drugs, and other methods for interrogation and behavior modification, often using unwitting subjects.</li>
     </ul>
 
