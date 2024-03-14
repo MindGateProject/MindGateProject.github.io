@@ -2,11 +2,11 @@
 
 DESCRIPTION:
 
-MONICA is a carefully crafted and modern HTML website template designed for freelancers, social 
-media managers, and marketing consultants who help businesses and companies improve their online 
-presence and establish long-lasting relationships with their communities. It is an excellent tool 
-for telling people about your skills and credentials, services, and other offerings, giving them 
-a better idea of who you are.
+ABSTRACT is a masonry HTML blog template. Its modern, clean design and nice
+typography makes it the perfect template for your blog site. The design is minimal, clean, 
+and makes great use of white space. It is fully responsive and retina ready. 
+It will look great, sharp and crisp on any devices and screen sizes. Also, The code behind 
+Abstract is clean and organized which makes it very easy to customize.
 
 ==================================================================================================
 
@@ -70,7 +70,7 @@ Also, keep your Paypal receipt as proof of payment and your good to go.
 
 SUPPORT:
     
-Since MONICA is distributed for free, support is not offered. MONICA is coded according 
+Since ABSTRACT is distributed for free, support is not offered. FLARE is coded according 
 to current web standards and we did our best to make the template easy to use and modify.
 If you have minimum web development experience, you can easily modify the template. 
 However, If you're still new to HTML and CSS, I suggest that you visit the 
@@ -80,37 +80,13 @@ following tutorials:
  - http://learn.shayhowe.com/html-css/
 
 These will teach you the essentials of HTML and CSS. In addition, if you want to include
-javascript in your skill-set, you can also check out these tutorials: 
+jQuery in your skill-set, you can also check out these tutorials: 
 
- - https://www.codecademy.com/learn/introduction-to-javascript
- - https://javascript.info/
-
+ - https://code.tutsplus.com/courses/30-days-to-learn-jquery
+ - https://code.tutsplus.com/courses/introduction-to-jquery
 
 
 ------------------------------------------------------------------------------------------------------ 
-
-
-USING THE MAILCHIMP FORM:
-
-To use the mailchimp form you need a mailchimp url. To get the mailchimp url, login to 
-your mailchimp account, click the Audience menu and select signup forms. Then choose 
-embedded forms and select unstyled form. In the generated form code get the value of 
-the form ACTION attribute and use it as your mailchimp url. Open the main.js file located
-in the template's "js" folder and look for this line of code: 
-
-const cfg = {
-
-    // MailChimp URL
-    mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6' 
-
-};
-
-
-Replace the value of mailChimpURL with your mailchimp url.
-
-
-
--------------------------------------------------------------------------------------------------------
 
 
 GET THE LATEST VERSION:
@@ -128,24 +104,27 @@ SOURCES AND CREDITS:
 I've used the following resources as listed.
 
 Fonts:
- - DM Serif Display Font (https://fonts.google.com/specimen/DM+Serif+Display)
- - Roboto Flex Font (https://fonts.google.com/specimen/Roboto+Flex)
+ - Inter Font (https://fonts.google.com/specimen/Inter)
+ - Roboto Font (https://fonts.google.com/specimen/Roboto)
 
 Icons:
+ - Iconmonstr (https://iconmonstr.com/)
  - Boxicons (https://boxicons.com/)
- - Atomicons (https://atomicons.com/)
 
 Stock Photos and Graphics:
  - Unsplash.com (https://unsplash.com/)
  
 Javascript Files:
- - MoveTo.js (https://github.com/hsnaydd/moveTo)
- - Prism.js (https://prismjs.com/)
- - Swiper JS (https://swiperjs.com/)
+ - JQuery (http://jquery.com/)
+ - Modernizr (http://modernizr.com/)
+ - Slick slider (http://kenwheeler.github.io/slick/)
+ - Prism JS (https://prismjs.com/)
+ - Lity (https://sorgalla.com/lity/)
+ - AjaxChimp (https://github.com/scdoshi/jquery-ajaxchimp)
 
 -------------------------------------------------------------------------------------------------------
 
 
-Thanks for downloading from StyleShout :)
+Thanks for downloading from Styleshout :)
 
 
