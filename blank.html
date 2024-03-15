@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Roll</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.css">
+    <style>
+        /* Add your custom styles for the blog roll page here */
+        .grid-item {
+            width: 33.33%; /* Adjust the width as needed */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .blog-post {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .blog-post h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- Dummy blog posts, repeat this block for each post -->
+        <div class="grid-item">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                <h2><a href="post.html">Post Title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et orci sit amet dolor malesuada placerat.</p>
+            </div>
+        </div>
+        <!-- Repeat this block 10 times for 10 posts -->
+        <!-- Dummy blog posts end -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // Initialize Masonry
+        var grid = document.querySelector('.grid');
+        var masonry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-item',
+            gutter: 20, // Adjust gutter as needed
+            transitionDuration: '0.5s' // Add animation transition
+        });
+    </script>
+</body>
+</html>

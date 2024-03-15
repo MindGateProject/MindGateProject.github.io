@@ -1,414 +1,720 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8" />
-	<title>MoreSleep - Creative Agency</title>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="apple-touch-icon" sizes="180x180" href="wp-content/themes/moresleep/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="wp-content/themes/moresleep/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="wp-content/themes/moresleep/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="wp-content/themes/moresleep/assets/favicons/site.webmanifest.txt">
-    <link rel="mask-icon" href="wp-content/themes/moresleep/assets/favicons/safari-pinned-tab.svg" color="#ff0028">
-    <link rel="shortcut icon" href="wp-content/themes/moresleep/assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ff0028">
-    <meta name="msapplication-config" content="https://www.moresleep.net/wp-content/themes/moresleep/assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
-	<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>MoreSleep - Creative Agency</title>
-	<link rel="canonical" href="index.html" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="MoreSleep - Creative Agency" />
-	<meta property="og:url" content="https://www.moresleep.net/" />
-	<meta property="og:site_name" content="MoreSleep" />
-	<meta property="article:modified_time" content="2023-12-02T16:38:09+00:00" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.moresleep.net/","url":"https://www.moresleep.net/","name":"MoreSleep - Creative Agency","isPartOf":{"@id":"https://www.moresleep.net/#website"},"datePublished":"2023-03-02T06:13:08+00:00","dateModified":"2023-12-02T16:38:09+00:00","breadcrumb":{"@id":"https://www.moresleep.net/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.moresleep.net/"]}]},{"@type":"BreadcrumbList","@id":"https://www.moresleep.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.moresleep.net/#website","url":"https://www.moresleep.net/","name":"MoreSleep","description":"Creative Agency","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.moresleep.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
-	<!-- / Yoast SEO plugin. -->
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Epitome</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.25.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-							<script src="https://www.googletagmanager.com/gtag/js?id=G-T6KLC4G6WE"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
-			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
-				var mi_version = '8.25.0';
-				var mi_track_user = true;
-				var mi_no_track_reason = '';
-								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.moresleep.net\/"};
-				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
-					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
-				} else {
-					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
-				}
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-								var disableStrs = [
-										'ga-disable-G-T6KLC4G6WE',
-									];
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-				/* Function to detect opted out users */
-				function __gtagTrackerIsOptedOut() {
-					for (var index = 0; index < disableStrs.length; index++) {
-						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
-							return true;
-						}
-					}
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-					return false;
-				}
-
-				/* Disable tracking if the opt-out cookie exists. */
-				if (__gtagTrackerIsOptedOut()) {
-					for (var index = 0; index < disableStrs.length; index++) {
-						window[disableStrs[index]] = true;
-					}
-				}
-
-				/* Opt-out function */
-				function __gtagTrackerOptout() {
-					for (var index = 0; index < disableStrs.length; index++) {
-						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-						window[disableStrs[index]] = true;
-					}
-				}
-
-				if ('undefined' === typeof gaOptout) {
-					function gaOptout() {
-						__gtagTrackerOptout();
-					}
-				}
-								window.dataLayer = window.dataLayer || [];
-
-				window.MonsterInsightsDualTracker = {
-					helpers: {},
-					trackers: {},
-				};
-				if (mi_track_user) {
-					function __gtagDataLayer() {
-						dataLayer.push(arguments);
-					}
-
-					function __gtagTracker(type, name, parameters) {
-						if (!parameters) {
-							parameters = {};
-						}
-
-						if (parameters.send_to) {
-							__gtagDataLayer.apply(null, arguments);
-							return;
-						}
-
-						if (type === 'event') {
-														parameters.send_to = monsterinsights_frontend.v4_id;
-							var hookName = name;
-							if (typeof parameters['event_category'] !== 'undefined') {
-								hookName = parameters['event_category'] + ':' + name;
-							}
-
-							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
-								MonsterInsightsDualTracker.trackers[hookName](parameters);
-							} else {
-								__gtagDataLayer('event', name, parameters);
-							}
-							
-						} else {
-							__gtagDataLayer.apply(null, arguments);
-						}
-					}
-
-					__gtagTracker('js', new Date());
-					__gtagTracker('set', {
-						'developer_id.dZGIzZG': true,
-											});
-					if ( MonsterInsightsLocations.page_location ) {
-						__gtagTracker('set', MonsterInsightsLocations);
-					}
-										__gtagTracker('config', 'G-T6KLC4G6WE', {"forceSSL":"true","link_attribution":"true"} );
-															window.gtag = __gtagTracker;										(function () {
-						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-						/* ga and __gaTracker compatibility shim. */
-						var noopfn = function () {
-							return null;
-						};
-						var newtracker = function () {
-							return new Tracker();
-						};
-						var Tracker = function () {
-							return null;
-						};
-						var p = Tracker.prototype;
-						p.get = noopfn;
-						p.set = noopfn;
-						p.send = function () {
-							var args = Array.prototype.slice.call(arguments);
-							args.unshift('send');
-							__gaTracker.apply(null, args);
-						};
-						var __gaTracker = function () {
-							var len = arguments.length;
-							if (len === 0) {
-								return;
-							}
-							var f = arguments[len - 1];
-							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
-								if ('send' === arguments[0]) {
-									var hitConverted, hitObject = false, action;
-									if ('event' === arguments[1]) {
-										if ('undefined' !== typeof arguments[3]) {
-											hitObject = {
-												'eventAction': arguments[3],
-												'eventCategory': arguments[2],
-												'eventLabel': arguments[4],
-												'value': arguments[5] ? arguments[5] : 1,
-											}
-										}
-									}
-									if ('pageview' === arguments[1]) {
-										if ('undefined' !== typeof arguments[2]) {
-											hitObject = {
-												'eventAction': 'page_view',
-												'page_path': arguments[2],
-											}
-										}
-									}
-									if (typeof arguments[2] === 'object') {
-										hitObject = arguments[2];
-									}
-									if (typeof arguments[5] === 'object') {
-										Object.assign(hitObject, arguments[5]);
-									}
-									if ('undefined' !== typeof arguments[1].hitType) {
-										hitObject = arguments[1];
-										if ('pageview' === hitObject.hitType) {
-											hitObject.eventAction = 'page_view';
-										}
-									}
-									if (hitObject) {
-										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
-										hitConverted = mapArgs(hitObject);
-										__gtagTracker('event', action, hitConverted);
-									}
-								}
-								return;
-							}
-
-							function mapArgs(args) {
-								var arg, hit = {};
-								var gaMap = {
-									'eventCategory': 'event_category',
-									'eventAction': 'event_action',
-									'eventLabel': 'event_label',
-									'eventValue': 'event_value',
-									'nonInteraction': 'non_interaction',
-									'timingCategory': 'event_category',
-									'timingVar': 'name',
-									'timingValue': 'value',
-									'timingLabel': 'event_label',
-									'page': 'page_path',
-									'location': 'page_location',
-									'title': 'page_title',
-									'referrer' : 'page_referrer',
-								};
-								for (arg in args) {
-																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
-										hit[gaMap[arg]] = args[arg];
-									} else {
-										hit[arg] = args[arg];
-									}
-								}
-								return hit;
-							}
-
-							try {
-								f.hitCallback();
-							} catch (ex) {
-							}
-						};
-						__gaTracker.create = newtracker;
-						__gaTracker.getByName = newtracker;
-						__gaTracker.getAll = function () {
-							return [];
-						};
-						__gaTracker.remove = noopfn;
-						__gaTracker.loaded = true;
-						window['__gaTracker'] = __gaTracker;
-					})();
-									} else {
-										console.log("");
-					(function () {
-						function __gtagTracker() {
-							return null;
-						}
-
-						window['__gtagTracker'] = __gtagTracker;
-						window['gtag'] = __gtagTracker;
-					})();
-									}
-			</script>
-				<!-- / Google Analytics by MonsterInsights -->
-		<style id='classic-theme-styles-inline-css' type='text/css'>
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<link rel='stylesheet' id='moresleep-css' href='wp-content/themes/moresleep/assets/theme-ver=1710496581.css' type='text/css' media='all' />
-<script type='text/javascript' src='wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min-ver=8.25.0.js' id='monsterinsights-frontend-script-js'></script>
-<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
-var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.moresleep.net","hash_tracking":"false","v4_id":"G-T6KLC4G6WE"};/* ]]> */
-</script>
-<link rel='shortlink' href='index.html' />
-<script>document.documentElement.className = document.documentElement.className.replace("no-js","js js-frontend");</script>
-<link rel="icon" href="wp-content/uploads/2019/08/190805-MS-Favicon-150x150.png" sizes="32x32" />
-<link rel="icon" href="wp-content/uploads/2019/08/190805-MS-Favicon.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="wp-content/uploads/2019/08/190805-MS-Favicon.png" />
-<meta name="msapplication-TileImage" content="wp-content/uploads/2019/08/190805-MS-Favicon.png" />
 </head>
-<body class="home page-template page-template-page-modules page-template-page-modules-php page page-id-7532 preload no-js">
 
-<header>
-    <div class="container header-container">
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
         <div class="header-logo">
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 20" role="img"><title>MindGate</title><path d="M20.7 15.9h-3.1V4.7l-5.9 11.2H9L3.1 4.7v11.2H0V.9h4.2l6.2 11.6L16.5.9h4.2v15zm2.2-5.9c0-3.7 3.1-6.2 7.5-6.2s7.5 2.5 7.5 6.2-3.1 6.2-7.5 6.2c-4.3 0-7.5-2.5-7.5-6.2zm12 0c0-2.3-1.9-3.8-4.6-3.8s-4.5 1.5-4.5 3.8 1.9 3.7 4.5 3.7c2.7 0 4.7-1.4 4.6-3.7zm16-5.5L50.3 7c-.8-.4-1.7-.6-2.6-.6-3.1 0-5 2.3-5 6.2v3.3h-3V4.1h3v3.7c.8-2.3 2.5-3.9 5.2-3.9 1.1 0 2.1.2 3 .6zm13.5 7.7l1.1 2.1c-1.8 1.2-4 1.9-6.2 1.9-4 0-7.6-2-7.6-6 0-3.7 2.9-6.3 7.4-6.3s6.7 2.6 6.8 5.8v.8H54.5c.2 2.3 2.3 3.4 4.8 3.4 1.8-.1 3.6-.6 5.1-1.7zm-9.7-3.6H63c-.3-1.5-1.7-2.5-4-2.5-2 0-3.7.9-4.3 2.5zM67.6 14l1-2.6c1.9 1.2 4.4 2.1 7.8 2.1 3.1 0 5.1-.7 5.1-2.1 0-1.2-1.5-1.4-5.1-1.8C71 9 68 8.1 68 5.1 68 2.2 70.9.6 75.8.6c3 0 6.1.7 8 1.6l-.7 2.6c-1.7-.9-4.2-1.7-7.3-1.7-3.2 0-4.6.8-4.6 1.8 0 1.1 1.7 1.5 5.1 1.8 4.9.5 8.4 1.1 8.4 4.4 0 3.1-3.3 4.9-8.4 4.9-3.1.2-6.3-.6-8.7-2zM86.5 0h3v15.9h-3V0zm17.6 12.2l1.1 2.1c-1.8 1.2-4 1.9-6.2 1.9-4 0-7.7-2-7.7-6 0-3.7 2.9-6.3 7.4-6.3 4.6 0 6.7 2.6 6.8 5.8v.8H94.3c.2 2.3 2.3 3.4 4.8 3.4 1.8-.1 3.5-.6 5-1.7zm-9.6-3.6h8.3c-.3-1.5-1.7-2.5-4-2.5-2 0-3.7.9-4.3 2.5zm25 3.6l1.1 2.1c-1.8 1.2-4 1.9-6.2 1.9-4 0-7.7-2-7.7-6 0-3.7 2.9-6.3 7.4-6.3 4.6 0 6.7 2.6 6.8 5.8v.8h-11.4c.2 2.3 2.3 3.4 4.8 3.4 2-.1 3.8-.6 5.2-1.7zm-9.6-3.6h8.3c-.3-1.5-1.7-2.5-4-2.5-2 0-3.7.9-4.3 2.5zM138 10c0 3.6-2.8 6.2-6.8 6.2-2.4 0-4.4-1-5.5-2.7V20h-3V4.1h3v2.4c1.1-1.7 3-2.7 5.5-2.7 4 0 6.8 2.6 6.8 6.2zm-3 0c0-2.2-1.8-3.8-4.6-3.8s-4.6 1.6-4.6 3.8c0 2.2 1.9 3.8 4.6 3.8 2.7 0 4.6-1.6 4.6-3.8z"/></svg><div class="scribble m--reset" data-scribble-id="C2"><svg width="1659" height="1187" viewBox="0 0 1659 1187" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <pattern id="pattern-1" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image width="100%" height="100%" xlink:href="https://www.moresleep.net/wp-content/themes/moresleep/assets/images/scribbles/png/C2W.png"></image>
-    </pattern>
-  </defs>
-  <path stroke-width="30" stroke="url(#pattern-1)" fill="none" d="M1455.5 239.5C1445 130.5 1304 34.5 1025 34.5C746 34.5 76 181 76 646.5C76 965 593.5 1037 911.5 1037C1252 1037 1617.5 876.5 1617.5 652.5C1617.5 421.5 1265 161 827.5 161C357.5 161 36 368 36 647C36 982 473.217 1187.94 836 1147C1217 1104 1555 949 1555 660C1555 466 1209 197 819.5 197C529 197 92 339 115 678" stroke-linecap="round" stroke-linejoin="round" />
-</svg></div>            </a>
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
         </div>
-        <nav class="header-nav disabled">
-            <ul id="menu-primary" class="header-nav-primary"><li id="menu-item-6851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6851"><a href="about/index.html">About</a></li>
-<li id="menu-item-6850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6850"><a href="work/index.html">Work</a></li>
-<li id="menu-item-6849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6849"><a href="contact/index.html">Contact</a></li>
-<li id="menu-item-6848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6848"><a href="join-us/index.html">Join us</a></li>
-</ul><div class="scribble m--reset" data-scribble-id="U4"><svg width="2018" height="199" viewBox="0 0 2018 199" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <pattern id="pattern-2" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image width="100%" height="100%" xlink:href="https://www.moresleep.net/wp-content/themes/moresleep/assets/images/scribbles/png/U4W.png"></image>
-    </pattern>
-  </defs>
-  <path stroke-width="25" stroke="url(#pattern-2)" fill="none" d="M64 166.5C285 142.5 664.5 119 898 108C1131.5 97 1524 75.5 1523 65.5C1522 55.5 1217 50.5 1004 52C791 53.5 431.5 71.5002 432.5 83.5002C433.5 95.5002 611.5 82.0002 661.5 77.5002C711.5 73.0002 854 61.9997 852 47C850 32.0002 703.293 31.3121 602.5 38C495.12 45.1248 274.89 77.4875 275.5 102.5C276.5 143.5 612 99.0001 844.5 104.5C1077 110 1918 117.5 1973.5 134C1938 129.565 1897 120.5 1864.5 108" stroke-linecap="round" stroke-linejoin="round" />
-</svg></div>            <ul class="header-nav-social">
-                <li><a href="https://www.instagram.com/moresleepberlin/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.3 10.1c0 2.9-2.4 5.3-5.3 5.3S4.7 13 4.7 10.1 7.1 4.8 10 4.8s5.3 2.4 5.3 5.3zm-8.7 0c0 1.9 1.5 3.4 3.4 3.4s3.4-1.5 3.4-3.4-1.5-3.4-3.4-3.4-3.4 1.5-3.4 3.4zm8.7-4.2c.7 0 1.3-.6 1.3-1.3s-.6-1.2-1.3-1.2S14 4 14 4.7s.6 1.2 1.3 1.2z"/><path d="M5.7 0C2.6 0 0 2.6 0 5.8v8.5C0 17.4 2.6 20 5.7 20h8.5c3.2 0 5.7-2.6 5.7-5.8V5.8C20 2.6 17.4 0 14.3 0H5.7zM1.9 14.2V5.8c0-2.2 1.7-3.9 3.9-3.9h8.5c2.1 0 3.9 1.8 3.9 3.9v8.5c0 2.2-1.7 3.9-3.9 3.9H5.7c-2.1-.1-3.8-1.8-3.8-4z"/></svg></a></li>
-                <li><a href="https://open.spotify.com/playlist/3y4UBW3byRFfN72zfValVr" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.9"><path d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10c-.1-5.5-4.5-10-10-10zm4.5 14.4c-.2.3-.6.4-.9.2-2.3-1.4-5.3-1.8-8.8-1-.3.1-.7-.2-.7-.5-.1-.3.1-.6.4-.7 3.8-.9 7.1-.5 9.7 1.1.4.2.5.6.3.9zm1.3-2.7c-.2.4-.7.5-1.1.3-2.7-1.6-6.8-2.1-9.9-1.2-.4.1-.8-.1-.9-.6-.2-.4 0-.8.4-.9 3.6-1.1 8.1-.6 11.2 1.3.4.2.5.7.3 1.1zm.1-2.9c-3.2-1.9-8.5-2-11.6-1.1-.5.1-1-.1-1.2-.6-.1-.5.2-1.1.6-1.2 3.6-1.1 9.4-.9 13.1 1.3.4.3.6.8.3 1.3s-.8.6-1.2.3z"/></svg></a></li>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
-        <button class="header-mobile-toggle">
-            <span class="toggle-icon">
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-    </div>
-</header>
 
-<div data-scroll-container>
-<div data-scroll-section>
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
 
-<main id="main">
-    <div style="width: 100%;height:1px;margin-bottom:-1px;"></div>
-<section class="module module-video fullscreen spacing-top-none spacing-bottom-lg m--has-parallax" data-scroll>
-    <video class="video video--mobile" poster="https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-09-at-11.51.49-1536x960.png" preload="metadata" autoplay playsinline muted loop>
-        <source src="https://www.moresleep.net/wp-content/uploads/2023/08/230809-MoreSleep-HomePage_Animation-Intro-Only-Mobile.mp4" type="video/mp4">
-        <p>Sorry, your browser doesn't support embedded videos.</p>
-    </video>
-    <video class="video video--desktop" poster="https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-09-at-11.51.49.png" preload="metadata" autoplay playsinline muted loop>
-        <source src="https://www.moresleep.net/wp-content/uploads/2023/08/230809-MoreSleep-HomePage_Animation-Intro-Only.mp4" type="video/mp4">
-        <p>Sorry, your browser doesn't support embedded videos.</p>
-    </video>
-</section>
-<section class="module module-parallax-text spacing-top-none spacing-bottom-lg">
-  <div class="module-parallax-text__container">
-    <p>We’re a team of creative minds who use strategies, design, content and tech products to make dreams come true for.</p>
-<p>We work with hospitality, real estate, culture and the arts — among others.</p>
-        <a class="button button-white" href="about/index.html" target="_self">
-      About us <span class="button-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15"><path d="M0 6.4v2.2h16.6l-2.2 2-3.2 2.9 1.7 1.5L21 7.5 12.9 0l-1.7 1.5 3.1 2.8 2.2 2L0 6.4z"/></svg></span>
-    </a>
-      </div>
-  <div class="module-parallax-text__bg">
-    <picture><source data-srcset="https://www.moresleep.net/wp-content/uploads/2023/10/56a57711-17b5-4378-8caf-5e84092a45ed-1-1600x1600.jpg" media="(max-width: 766px)"><source data-srcset="https://www.moresleep.net/wp-content/uploads/2023/10/56a57711-17b5-4378-8caf-5e84092a45ed-1-2048x2048.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.moresleep.net/wp-content/uploads/2023/10/56a57711-17b5-4378-8caf-5e84092a45ed-1-1600x1600.jpg" class="lazyload" alt="Section background image"></picture>  </div>
-</section>
-<section class="module module-features spacing-top-none spacing-bottom-lg m--stack">
-  <div class="module-features__loop">
-    <div class="ms-feature m--live"><div class="tags small"><a class="tag" href="work/service/strategy/index.html">Strategy</a><a class="tag" href="work/service/branding/index.html">Branding</a><a class="tag" href="work/service/web-design/index.html">Web Design</a><a class="tag" href="work/service/social-media/index.html">Social Media</a><a class="tag" href="work/service/art-direction/index.html">Art Direction</a><a class="tag" href="work/service/web-development/index.html">Web Development</a></div><a href="work/las-art-foundation/index.html" class="ms-feature__main"><img class="ms-feature__bg image lazyload" alt="" data-srcset="https://www.moresleep.net/wp-content/uploads/2022/10/LAS_Art_Foundation-Ian_Cheng-1024x683.jpeg 1024w, https://www.moresleep.net/wp-content/uploads/2022/10/LAS_Art_Foundation-Ian_Cheng-1600x1067.jpeg 1600w, https://www.moresleep.net/wp-content/uploads/2022/10/LAS_Art_Foundation-Ian_Cheng-768x512.jpeg 768w, https://www.moresleep.net/wp-content/uploads/2022/10/LAS_Art_Foundation-Ian_Cheng-1536x1025.jpeg 1536w, https://www.moresleep.net/wp-content/uploads/2022/10/LAS_Art_Foundation-Ian_Cheng.jpeg 1619w" sizes="100vw"><div class="ms-feature__center"><h3 class="headline-lg">LAS Art Foundation</h3><p class="text-lg">A branding partnership for art experiences of visionary futures</p></div><video class="ms-feature__bg image lazyload" src="https://www.moresleep.net/wp-content/uploads/2023/12/MS-HP_Videos-LAS.mp4" autoplay playsinline muted loop sizes="100vw" /></a></div>
-<div class="ms-feature m--live"><div class="tags small"><a class="tag" href="work/service/branding/index.html">Branding</a><a class="tag" href="work/service/web-design/index.html">Web Design</a><a class="tag" href="work/service/web-development/index.html">Web Development</a></div><a href="work/mizzuni/index.html" class="ms-feature__main"><img class="ms-feature__bg image lazyload" alt="" data-srcset="https://www.moresleep.net/wp-content/uploads/2023/07/Mizzuni-Header_Case-Study-1024x620.jpg 1024w, https://www.moresleep.net/wp-content/uploads/2023/07/Mizzuni-Header_Case-Study-1600x969.jpg 1600w, https://www.moresleep.net/wp-content/uploads/2023/07/Mizzuni-Header_Case-Study-768x465.jpg 768w, https://www.moresleep.net/wp-content/uploads/2023/07/Mizzuni-Header_Case-Study-1536x930.jpg 1536w, https://www.moresleep.net/wp-content/uploads/2023/07/Mizzuni-Header_Case-Study.jpg 1920w" sizes="100vw"><div class="ms-feature__center"><h3 class="headline-lg">Mizzuni</h3><p class="text-lg">Seamless furniture e-commerce in a tailored platform</p></div><video class="ms-feature__bg image lazyload" src="https://www.moresleep.net/wp-content/uploads/2023/12/MS-HP_Videos-Mizzuni.mp4" autoplay playsinline muted loop sizes="100vw" /></a></div>
-<div class="ms-feature m--soon"><div class="tags small"><a class="tag" href="work/service/branding/index.html">Branding</a><a class="tag" href="work/service/strategy/index.html">Strategy</a><a class="tag" href="work/service/web-design/index.html">Web Design</a></div><div class="ms-feature__main"><img class="ms-feature__bg image lazyload" alt="" data-srcset="https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-02-at-16.15.20-1024x576.png 1024w, https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-02-at-16.15.20-1600x900.png 1600w, https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-02-at-16.15.20-768x432.png 768w, https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-02-at-16.15.20-1536x864.png 1536w, https://www.moresleep.net/wp-content/uploads/2023/08/Screenshot-2023-08-02-at-16.15.20-2048x1152.png 2048w" sizes="100vw"><div class="ms-feature__center"><span class="tag">Coming Soon</span><h3 class="headline-lg">Lewis Group of Companies</h3><p class="text-lg">Modernising one of California’s largest real estate developers</p></div><video class="ms-feature__bg image lazyload" src="https://www.moresleep.net/wp-content/uploads/2023/12/MS-HP_Videos-LEWIS.mp4" autoplay playsinline muted loop sizes="100vw" /></div></div>
-  </div>
-  <div class="module-features__btn-wrap container-pad"><a class="button button-white" href="work/index.html">View more <span class="button-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15"><path d="M0 6.4v2.2h16.6l-2.2 2-3.2 2.9 1.7 1.5L21 7.5 12.9 0l-1.7 1.5 3.1 2.8 2.2 2L0 6.4z"/></svg></span></a></div></section><section class="module module-parallax-headline spacing-top-none spacing-bottom-lg">
-  <div class="module-parallax-headline__hl-wrap">
-    <div class="module-parallax-headline__hl-wrap-inner">
-      <h2 class="headline-lg hl-has-scribbles module-parallax-headline__hl">
-        Want <strong>MoreSleep<div class="scribble m--reset m--autoplay" data-scribble-id="U4" data-scroll><svg width="2018" height="199" viewBox="0 0 2018 199" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <pattern id="pattern-3" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image width="100%" height="100%" xlink:href="https://www.moresleep.net/wp-content/themes/moresleep/assets/images/scribbles/png/U4W.png"></image>
-    </pattern>
-  </defs>
-  <path stroke-width="25" stroke="url(#pattern-3)" fill="none" d="M64 166.5C285 142.5 664.5 119 898 108C1131.5 97 1524 75.5 1523 65.5C1522 55.5 1217 50.5 1004 52C791 53.5 431.5 71.5002 432.5 83.5002C433.5 95.5002 611.5 82.0002 661.5 77.5002C711.5 73.0002 854 61.9997 852 47C850 32.0002 703.293 31.3121 602.5 38C495.12 45.1248 274.89 77.4875 275.5 102.5C276.5 143.5 612 99.0001 844.5 104.5C1077 110 1918 117.5 1973.5 134C1938 129.565 1897 120.5 1864.5 108" stroke-linecap="round" stroke-linejoin="round" />
-</svg></div></strong>?      </h2>
-    </div>
-  </div>
-  </section><section class="module module-parallax-text spacing-top-none spacing-bottom-lg">
-  <div class="module-parallax-text__container">
-    <p>Great work comes from balance.</p>
-<p>If you&#8217;re a talented creative who wants to create powerful ideas in a sustainable environment, we&#8217;d love to hear from you.</p>
-        <a class="button button-white" href="join-us/index.html" target="_self">
-      Join us <span class="button-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15"><path d="M0 6.4v2.2h16.6l-2.2 2-3.2 2.9 1.7 1.5L21 7.5 12.9 0l-1.7 1.5 3.1 2.8 2.2 2L0 6.4z"/></svg></span>
-    </a>
-      </div>
-  <div class="module-parallax-text__bg">
-    <picture><source data-srcset="https://www.moresleep.net/wp-content/uploads/2023/10/sk8r-2048x950.jpg" media="(max-width: 766px)"><source data-srcset="https://www.moresleep.net/wp-content/uploads/2023/10/sk8r-2048x950.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.moresleep.net/wp-content/uploads/2023/10/sk8r-2048x950.jpg" class="lazyload" alt="Section background image"></picture>  </div>
-</section>
-</main>
-<div class="footer-container">
-    <footer class="container">
-        <div class="text-base footer-contact">
-            <p>Ask us how to worry less and get MoreSleep. Drop us a line at <a href="cdn-cgi/l/email-protection.html#4724282933262433072a283522342b22223769292233"><span class="__cf_email__" data-cfemail="a7c4c8c9d3c6c4d3e7cac8d5c2d4cbc2c2d789c9c2d3">[email&#160;protected]</span></a>.</p>
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Nexus of Cognition</h3>
+                <h1>
+                   Embark on a Journey <br>
+                     of Mental Exploration <br>
+                    and Innovation
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div> <!-- end row -->
+
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">About MindGate Project</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                   In the enigmatic crucible of human consciousness, Project MindGate emerges as a 
+                   testament to the boundless frontier of cognitive exploration. Born from the convergence 
+                   of visionary intellects and the relentless pursuit of understanding, it stands as an audacious beacon 
+                   illuminating the path towards the yet uncharted realms of the mind. 
+                    </p>
+
+                    <p>
+                   Steeped in the esoteric tapestry of scientific inquiry and philosophical introspection, 
+                   this endeavor transcends the mundane and beckons forth the extraordinary, inviting all 
+                   seekers to partake in the unraveling mysteries of the psyche.
+                    </p>
+
+                    <p>
+                   In this ambitious endeavor, Project MindGate ventures into the profound depths of human 
+                   consciousness, seeking to unravel the enigmatic threads that bind us to the universe. 
+                   </p>
+
+                    <p>
+                	By delving into the Akashic Database, a metaphysical reservoir of universal knowledge, 
+                   	we aim to transcend conventional boundaries and tap into the collective wisdom of humanity's 
+                   	past, present, and future.Through the intricate interconnection of minds, facilitated by advanced computational 
+                    models akin to the Akashic Database, we envisage a paradigm shift in our understanding
+                    of reality. By synchronizing individual consciousnesses and integrating them into a 
+                    unified network, we aspire to catalyze profound insights, foster collaborative 
+                    innovation, and usher in a new era of collective evolution.
+                    </p>
+                      <p>
+					At the heart of this visionary endeavor lies the aspiration to harness the latent 
+					potential of the human mind and channel it towards the realization of a harmonious 
+					and enlightened society. By forging connections between minds and leveraging the 
+					infinite reservoir of knowledge within the Akashic Database, Project MindGate 
+					endeavors to unlock the boundless possibilities of human consciousness and propel 
+					humanity towards a future defined by wisdom, compassion, and unity.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--primary full-width">Download CV</a>
+                </div>
+            </div>
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2018 - Present</p>
+                                <h3 class="item-title">Awesome Studio</h3>
+                                <h5>Lead Designer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2017 - June 2018</p>
+                                <h3 class="item-title">Super Cool Agency</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">March 2016 - June 2017</p>
+                                <h3 class="item-title">Epic Design Studio</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2011 - June 2015</p>
+                                <h3 class="item-title">University of Life</h3>
+                                <h5>Master Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2009 - June 2011</p>
+                                <h3 class="item-title">State Design University</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2005 - June 2009</p>
+                                <h3 class="item-title">School of Hard Knocks</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
+
+                <p class="section-desc">
+                    My passion and goal is to help you make your business standout.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Brand Identity</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Illustration</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Web Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Product Strategy</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Mobile Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- CTA
+    ================================================== -->
+    <section class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-desc">
+                    Need a great reliable web hosting?
+                </h2>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column large-full">
+                <p>
+                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
+                Powerful web and Wordpress hosting. Guaranteed.
+                Starting at $2.95 per month.
+                </p>
+
+                <a href="https://www.dreamhost.com/r.cgi?287326" class="btn full-width">Get Started</a>
+            </div>
+        </div> <!-- end ad-content -->
+
+    </section> <!-- end s-cta -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
+                <p class="section-desc">
+                    Here are some of my selected works I have done lately. Feel free to 
+                    check them out.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-city-building.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <img src="images/portfolio/city-building.jpg" 
+                                     srcset="images/portfolio/city-building.jpg 1x, images/portfolio/city-building@2x.jpg 2x" alt="">
+                            </a>    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+    
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                City Building
+                            </h4>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+    
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg" 
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Woodcraft
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="images/portfolio/the-beetle.jpg"
+                                     srcset="images/portfolio/the-beetle.jpg 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                The Beetle
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Development
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" 
+                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Shutterbug
+                            </h4>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg" 
+                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Lamp
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+        
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                <img src="images/portfolio/fuji.jpg"
+                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Fuji
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+
+
+    <!-- testimonies
+    ================================================== -->
+    <section class="s-testimonials">
+    
+        <div class="row testimonials" data-aos="fade-up">
+
+            <div class="column large-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                    Laudantium quia consequatur molestias delectus culpa.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Tim Cook</strong>
+                            <span>CEO, Apple</span>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+                <div class="testimonials__slide">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Sundar Pichai</strong>
+                            <span>CEO, Google</span>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+                <div class="testimonials__slide">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                    Voluptatem dignissimos ut.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Satya Nadella</strong>
+                            <span>CEO, Microsoft</span>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
         </div>
-        <div class="footer-location berlin">
-            <h3 class="location-name">BER <span id="location-status-berlin" class="location-status"></span></h3>
-            <address class="text-lg">
-                MoreSleep GmbH & Co. KG<br />
-Glogauer Str. 2<br />
-10999 Berlin, Germany<br />
-+49 30280 99595            </address>
-            <a class="map" href="https://goo.gl/maps/cBopopZY9S2riGLn9" target="_blank" rel="noopener">
-                Map <span class="map-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15"><path d="M0 6.4v2.2h16.6l-2.2 2-3.2 2.9 1.7 1.5L21 7.5 12.9 0l-1.7 1.5 3.1 2.8 2.2 2L0 6.4z"/></svg></span>
-            </a>
-            <img class="location-image lazyload" src="wp-content/themes/moresleep/assets/images/footer-berlin.jpg" alt="" />
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <p class="contact-email">
+                    <a href="mailto:#0">hello@epitome.com</a>
+                </p>
+
+                <p class="section-desc">
+                I'm happy to connect, listen and help. Let's work together and build
+                something awesome. Let's turn your idea to an even greater product.
+                <a href="mailto:#0">Email Me</a>.
+                </p>
+            </div>
         </div>
-        <div class="footer-location los-angeles">
-            <h3 class="location-name">LA <span id="location-status-la" class="location-status"></span></h3>
-            <address class="text-lg">
-                MoreSleep<br />
-3085 Lombardy Rd, <br />
-Pasadena, CA 91107<br />
-            </address>
-            <a class="map" href="https://goo.gl/maps/y6gEXfGN3KVEj2m77" target="_blank" rel="noopener">
-                Map <span class="map-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15"><path d="M0 6.4v2.2h16.6l-2.2 2-3.2 2.9 1.7 1.5L21 7.5 12.9 0l-1.7 1.5 3.1 2.8 2.2 2L0 6.4z"/></svg></span>
-            </a>
-            <img class="location-image lazyload" src="wp-content/themes/moresleep/assets/images/footer-la.jpg" alt="" />
-        </div>
-        <ul class="footer-social">
-            <li><a class="instagram" href="https://www.instagram.com/moresleepberlin/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a class="facebook" href="https://www.facebook.com/moresleepberlin/" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a class="spotify" href="https://open.spotify.com/playlist/3y4UBW3byRFfN72zfValVr" target="_blank" rel="noopener">Spotify</a></li>
-        </ul>
-        <div class="text-sm footer-copyright">
-            <p>© 2024 MoreSleep<br />All rights reserved</p>
-        </div>
-        <div class="text-sm footer-legal">
-            <a href="impressum/index.html">Impressum & Datenschutz</a>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+            <div class="column large-5 medium-full contact-phone">
+                <h4>Call Me</h4>
+                <a href="tel:197-543-2345">+197 543 2345</a>
+            </div>
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#0" title="Facebook">Facebook</a></li>
+                    <li><a href="#0" title="Twitter">Twitter</a></li>
+                    <li><a href="#0" title="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Epitome 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>            
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
         </div>
     </footer>
-</div>
 
-</div>
-</div><!-- scroll container -->
 
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='wp-content/themes/moresleep/assets/theme-ver=1710496581.js' id='moresleep-js'></script>
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-</html>
-
-<!-- plugin=object-cache-pro client=phpredis metric#hits=2315 metric#misses=4 metric#hit-ratio=99.8 metric#bytes=1047121 metric#prefetches=77 metric#store-reads=21 metric#store-writes=14 metric#store-hits=107 metric#store-misses=2 metric#sql-queries=16 metric#ms-total=258.04 metric#ms-cache=11.35 metric#ms-cache-avg=0.3337 metric#ms-cache-ratio=4.4 -->
