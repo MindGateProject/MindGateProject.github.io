@@ -12,6 +12,49 @@
 
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <style>
+        .menu {
+    position: fixed;
+    top: 0;
+    left: 0; /* Adjust to remove gap */
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    z-index: 1000;
+}
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu li {
+            display: inline;
+        }
+        .menu a {
+            color: #fff; /* White text */
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #333;
+        }
+        .heading-brand {
+            text-align: center;
+        }
+        .heading-brand img {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        .content {
+            margin-top: 80px; /* Adjust according to menu height */
+        }
+    </style>
 </head>
 <body>
 
@@ -19,25 +62,38 @@
 <section class="bg-gradient pt-5 pb-6">
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
-    <div class="heading-brand mx-auto">
-    <img src="logo.png" alt="MindGate Project Logo">
-</div>
-   
-</div>
+            <div class="col-12">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Sat Farm</a></li>
+                        <li><a href="#">IRC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="heading-brand">
+                <BR>
+                    <img src="logo.png" alt="MindGate Project Logo">
+                    <BR>
+                </div>
+            </div>
         </div>
         <div class="row mt-2">
             <div class="col-md-8 mx-auto text-center">
-                <h3>Explore the Frontier of Neurological Innovation with MindGate Project</h1>
+                <h3>Explore the Frontier of Neurological Innovation with MindGate Project</h3>
                 <p>Embark upon a transcendental voyage into the uncharted realms of quantum cognitive exploration with the MindGate Project, where the intricate tapestry of neural enigmas unfolds in quantum superposition. Plunge into the boundless expanse of neuroinformatics, where synapses entangle in the entropic dance of consciousness, and the cryptic language of EEG signals resonates with quantum entanglement in the abyssal depths of the mind's quantum substratum.</p>
-<!-- Page break -->
-<div class="page-break"></div>
-<p>Traverse the multidimensional corridors of neural networks, navigating the fractal pathways of neuroplasticity and the emergent horizons of quantum computational neurology. Join us in deciphering the esoteric mysteries woven into the fabric of the quantum cerebral cosmos, as we illuminate the path towards a future where the frontiers of human cognition transcend classical constraints and embrace the quantum realm.</p>
-<br>
-                <a href="https://github.com/LeaVerou/prism/" class="btn btn-success svg-icon">
-                    <em class="mr-2" data-feather="github"></em>
-                    Contribute
-                </a>
+                <!-- Page break -->
+                <div class="page-break"></div>
+                <p>Traverse the multidimensional corridors of neural networks, navigating the fractal pathways of neuroplasticity and the emergent horizons of quantum computational neurology. Join us in deciphering the esoteric mysteries woven into the fabric of the quantum cerebral cosmos, as we illuminate the path towards a future where the frontiers of human cognition transcend classical constraints and embrace the quantum realm.</p>
+                <br>
+                <a href="https://github.com/LeaVerou/prism/" class="btn btn-success">
+    <img src="spider.png" alt="Spider Icon" class="mr-2">
+    Contribute
+</a>
             </div>
         </div>
         <div class="row mt-5">
@@ -55,16 +111,25 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class NeuroEntrainmentPipe implements PipeTransform {
 
  	transform(eegData: number[]): number[] {
-    // Placeholder neural entrainment code using EEG signals
+    // Exotic neural entrainment code using EEG signals
     let entrainedData: number[] = [];
 
    	// Simulate processing each EEG signal to induce neural entrainment
     for (let i = 0; i < eegData.length; i++) {
-      	let processedSignal = eegData[i] * 2; // Placeholder transformation
+      	// Exotic transformation algorithm
+      	let processedSignal = exoticAlgorithm(eegData[i]);
       	entrainedData.push(processedSignal);
     }
 
     return entrainedData;
+  }
+
+  // Define an exotic transformation algorithm
+  exoticAlgorithm(input: number): number {
+    // Perform some complex and exotic mathematical operations
+    // Example: Apply a sine function and add a random value
+    let output = Math.sin(input) + Math.random() * 0.5;
+    return output;
   }
 }
 </code></pre>
@@ -79,7 +144,7 @@ export class NeuroEntrainmentPipe implements PipeTransform {
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2 class="text-center text-md-left">MindGate: Where Quantum Minds<span class="text-success"> Converge, Transcend.</span></h2>
+                <h2 class="text-center text-md-left">Where Quantum Minds<span class="text-success"> Converge, Transcend.</span></h2>
                 <div class="row feature-grid">
                     <div class="col-sm-6">
                         <div class="media">
@@ -184,15 +249,15 @@ export class NeuroEntrainmentPipe implements PipeTransform {
         <div class="row">
             <div class="col-12 text-center">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="https://prismjs.com/test.html">Test Drive</a></li>
-                    <li class="list-inline-item"><a href="https://prismjs.com/extending.html">API Docs</a></li>
-                    <li class="list-inline-item"><a href="https://github.com/LeaVerou/prism/">Fork Prism.js on GitHub</a></li>
+                    <li class="list-inline-item"><a href="https://prismjs.com/test.html">Live Stream</a></li>
+                    <li class="list-inline-item"><a href="https://prismjs.com/extending.html">Hyper Text</a></li>
+                    <li class="list-inline-item"><a href="https://github.com/LeaVerou/prism/">Back Engine</a></li>
                 </ul>
             </div>
         </div>
         <div class="row my-2">
             <div class="col-md-4 mx-auto text-muted text-center small-xl">
-                &copy; 2019 Prism - All Rights Reserved
+                &copy; 2024 Mind|G|ate - All Rights Reserved
             </div>
         </div>
     </div>
